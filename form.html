@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для заказа</title>
+</head>
+<!--табличка border создаёт рамку-->
+<body>
+   <!-- <table border="10"cellspacing="0" cellpadding="20">
+
+        <tr>
+                <!--colspan объединяет указанное кол-во ячеек по горизорнтали а rowspan по вертикали-->
+ <!--           <th colspan="3">Успеваемость группы</th>
+        
+        </tr>
+
+        <tr>
+            <!--th используется для выделения по типу заголовка!!!-->
+ <!--           <th>ФИО</th> <th>Группа</th> <th>Оценка</th>
+
+        </tr>
+
+        <tr>
+                <!--если у нас одинаковый элемент и нужно объединить таблички по вертикали то мы удаляем один из элементов и объединяем иначе всё слетит-->
+  <!--          <td>Иванов.И.И</td> <td rowspan="2">РТХН2</td> <td>3</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Генов Г.Г.</td> <td>3</td>
+
+        </tr>
+    
+    </table> -->
+    <form action="">
+
+    <table border="10" cellspacing="0" cellpadding="20">
+
+        <th colspan="2">Форма заказа товаров</th>
+        <tr>
+
+            <td>Имя пользователя <input type="text"></td> 
+            
+            <td rowspan="4">
+
+                Доставка 
+                <br>
+                <input type="radio" name="deliver" value="Mail" checked>Почта
+                <br>
+                <input type="radio" name="deliver" value="Deliveryboy">Курьер
+                <br>
+                <input type="radio" name="deliver" value="Selfcare">Самовывоз
+
+            </td>
+
+        </tr> 
+
+        <tr>
+
+            <td>Пароль <input type="password"></td>
+
+        </tr>
+        
+        <tr>
+
+            <td>Адрес получателя <input type="text"></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Количество <input type="number"></td>
+
+        </tr>
+
+        <tr>
+
+            <td rowspan="3">
+                Наименование товара 
+                <select name="food" id="">
+                    <option value="apple">Яблоко</option>
+                    <option value="orange">Апельсин</option>
+                    <option value="Banana">Банан</option>
+                </select>
+            </td> 
+            <td><i>Требуется приходный ордер <input type="checkbox"></i></td>
+
+        </tr>
+
+        <tr>
+
+            <th>Дополнительная информация</th>
+
+        </tr>
+
+        <tr>
+
+            <td><input type="submit"> <input type="reset"></td>
+
+        </tr>
+
+
+    </table> 
+
+    </form>
+
+</body>
+
+</html>

@@ -15,5 +15,114 @@
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium numquam at deserunt vitae repudiandae ducimus, quis, tempora dicta voluptas molestias ut itaque cupiditate? Consequuntur reiciendis vero dolor, quibusdam consequatur in?
     <h1>Меню 3</h1>
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, quibusdam! Repudiandae, laborum rem. Consequuntur corrupti iste, incidunt saepe perferendis eveniet reiciendis dolorem dignissimos, est beatae accusamus neque obcaecati quam quod!
+    <!--Для отправки форм дейтсвие метод и тип файла-->
+    <form action="/project.php" method="post" enctype="">
+        <!--форма input поле для ввода текста с подсказкой и обяазтельным к заполнению полем иразмером 10 пикселей id и макс длинной 10сим и мин 5-->
+        <input type="text" placeholder="Введите имя" size="10" id="username" minlength="5" maxlength="10" required >
+        <br>
+        <!--форма инпут для паролей-->
+        <input type="password">
+        <br>
+        <!--форма инпут для флажков-->
+        <input type="checkbox">
+        <br>
+        <!--форма инпут для выбора мужским полом по умолчанию-->
+        <input type="radio" name="gender" value="male" checked>Мужской 
+        <input type="radio" name="gender" value="female">Женский
+        <br>
+        <!--форма инпут для Отправки данных-->
+        <input type="submit">
+        <br>
+        <!--Позволяет отправить файл-->
+        <input type="file" name="fileUpload">
+        <br>
+        <!--позволяет использовать что-то типо подсказки-->
+        <label for="age">Введите возраст</label>
+        <!--позволяет выбрать номер-->
+        <input type="number" min="16" max="99" id="age" required>
+        <br>
+        <!--позволяет выбрать data-->
+        <input type="date">
+        <br>
+        <!--позволяет выбрать email-->
+        <input type="email">
+        <br>
+        <!--позволяет send a URL-->
+        <input type="url">
+        <br>
+        <!--СЕЛЕКТОР-->
+        <select name="cars" id="">
+            <optgroup>
+                <option value="Toyota">Toyota</option>
+                <option value="Nissan">Nissan</option>
+            </optgroup>
+            <optgroup>
+                <option value="Lada">Lada</option>
+                <option value="Volga">Volga</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="">Введите номер телефона</label>
+        <input type="tel" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-xxx-xxx-xx-xx" required>
+        
+        <h2>Списки</h2>
+            <ol>
+                <li>показательный</li>
+                <li>пример</li>
+                <li>списков</li>
+            </ol>
+            
+            <ol type="A">
+                <li>показательный</li>
+                <li>пример</li>
+                <li>списков</li>
+            </ol>
+            
+            <ol type="I">
+                <li>показательный</li>
+                <li>пример</li>
+                <li>списков</li>
+            </ol>
+
+            <ol start="4">
+                <li>показательный</li>
+                <li>пример</li>
+                <li>списков</li>
+            </ol>
+
+            <h2>Маркированные</h2>
+
+            <ul>
+                <li>показательный</li>
+                <li>пример</li>
+                <li>списков</li>
+            </ul>
+
+            <ul type="circle">
+                <li>показательный</li>
+                <li>пример</li>
+                <li>списков</li>
+            </ul>
+
+            <ul type="square">
+                <li>показательный</li>
+                <li>пример</li>
+                <li>списков</li>
+            </ul>
+
+            <h2>Вложенные списки</h2>
+
+            <ul>
+                <li>показательный</li>
+                    <ol>
+                        <li>показательный</li>
+                        <li>пример</li>
+                        <li>списков</li>
+                    </ol>
+                <li>пример</li>
+                <li>списков</li>
+            </ul>
+
+    </form>
 </body>
 </html>
