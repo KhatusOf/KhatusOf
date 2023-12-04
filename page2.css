@@ -9,6 +9,16 @@ body{
     background-color: rgb(192, 166, 53)
 }
 
+.bg2{
+    padding: 100px;
+    background-color: rgb(120, 192, 53)
+}
+
+.bg3{
+    padding: 100px;
+    background-color: rgb(53, 125, 192)
+}
+
 .content{
     width: 70%;
     margin: auto;
