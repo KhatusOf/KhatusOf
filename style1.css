@@ -1,0 +1,40 @@
+
+p{
+    font-family: cursive;
+    text-align: justify;
+}
+
+ol{
+    color: coral;
+}
+
+body{
+
+    background-color:linear-gradient(-45deg, rgb(20, 223, 179), rgb(0, 156, 247)) 
+}
+
+h1{
+    color: rgb(236, 9, 134);
+    text-align:center;
+}
+
+h2{
+    color: crimson;
+    text-align: center;
+}
+
+h3{
+    color: crimson;
+    text-align: center;
+}
+
+h4{
+    color: crimson;
+    text-align: center;
+}
+
+.txt_red{
+    color: rgb(0, 128, 6);
+    font-family: fantasy;
+}
+
