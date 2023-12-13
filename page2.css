@@ -1,30 +1,71 @@
-.menus{
-    background-color: blueviolet;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-body{
-    padding: 0;
-  /*  background-color: rgb(235, 235, 235) */
-    background-image: url(images/bakcgroundbooks.jpg);
 
+body{
+    padding: 0px;
+    background-color: rgb(99, 99, 99)
+   /*background-image: url(images/bakcgroundbooks.jpg)*/
+
+}
+/*Верхушка на сайте*/
+header{
+    height:50%; 
+    width: 100%;
+    background: url(images/anotherfon.jpg);
+    background-size: cover;
+    transition: 1.3s;
+}
+
+header:hover{
+    height:70%
+}
+
+/*Навигационное меню с лого*/
+nav{
+    background-color: rgba(100, 100, 100, 0.87);
+    color: rgb(219, 219, 219);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    margin:30px;
+    box-sizing: border-box;
+    color: beige;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    font-size: 22px;
 }
 
 .bg1{
     padding: 100px;
-    background-color: rgb(192, 166, 53) 
+    background-color: rgb(99, 99, 99);
+    box-sizing: border-box;
+    color: beige;
 }
 
 .bg2{
     padding: 100px;
-    background-color: rgb(120, 192, 53)
+    background-color:rgb(85, 85, 85);
+    box-sizing: border-box;
+    color: beige;
+    display: flex;
 }
 
 .bg3{
     padding: 100px;
-    background-color: rgb(53, 125, 192)
+   background-color: rgb(75, 75, 75);
+    box-sizing: border-box;
+    color: beige;
 }
 
 .content{
@@ -38,6 +79,7 @@ p{
 
 h1{
     text-align: center;
+    color: beige;
 }
 
 .block{
@@ -50,14 +92,125 @@ h1{
 
 .block2{
     display: flex;
-    justify-content: space-around;
-    flex-direction:column;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 }
 
 
 .pic{
-    width: 60%;
+    width: 50%;
     margin: 20px;
+}
+
+
+
+.logo_img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.logo_txt{
+        text-decoration: none;
+        font-size: 25px;
+        color: beige;
+        margin-left: 20px;
+}
+.logo_block{
+    display: flex;
+    align-items: center;
+}
+
+/*контекстный селектор выбираем класс меню и выбираем в нём ссылки а*/
+
+
+.topButton{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /*width: 100%;*/
+    box-sizing: border-box;
+    color: darkorange;
+    font-size: 20px;
+    background-color:rgba(107, 107, 107, 0.842);
+    transition: 1s;
+
+}
+
+.topButton:hover{
+    padding: 18px;
+}
+
+.text_banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+    font-size: 20px;
+    color: beige;
+    justify-content: center;
+    top: 100px
+   /* right:400px;*/
+
+
+}
+
+.flex_sp_between{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.picforanim{
+    align-content: stretch;
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+
+.bulka{
+    align-content: stretch;
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 200px;
+    top: 50px;
+}
+
+footer{
+    background: url(images/forfooter.jpg);
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
+}
+
+.footer_txt{
+    color: beige;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+}
+
+.text_coloring{
+    color: beige;
+    font-size: 20px;
 }

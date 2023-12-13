@@ -1,0 +1,16 @@
+.fon{
+    background-image:url(images/bakcgroundbooks.jpg);
+    background-size: cover;
+    width:300px;
+    height:500px ;
+    position: absolute;
+
+}
+.txt{
+    background-color: grey;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 25%;
+}
